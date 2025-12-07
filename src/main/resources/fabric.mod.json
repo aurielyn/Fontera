@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${mod_version}",
+	"name": "${mod_name}",
+	"description": "Fontera is a simple text rendering library with custom font support.",
+	"authors": [
+		"StellariumMC"
+	],
+	"contact": {
+		"homepage": "https://meowing.xyz/",
+		"sources": "https://github.com/aurielyn/Fontera/"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/fontera/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "xyz.meowing.fontera.Fontera",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"minecraft": "~${minor_mc_version}",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+		"fabricloader": ">=0.15.11"
+	}
+}
